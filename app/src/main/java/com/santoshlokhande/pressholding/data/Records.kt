@@ -1,4 +1,4 @@
-package com.myproject.albumlist.data
+package com.santoshlokhande.pressholding.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -15,11 +15,11 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "record_table")
 data class Records(
         @PrimaryKey
-        val id: Int,
-        val userId: Int,
-        val title: String
+        val _id: Int,
+        val volume_of_mobile_data: String,
+        val quarter: String
 )
 
-data class AlbumResponse(
-        val results: List<Records>
+data class RecordResponse(
+        val records: List<Records>
 )

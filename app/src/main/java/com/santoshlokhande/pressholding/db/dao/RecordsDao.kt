@@ -2,7 +2,7 @@ package com.santoshlokhande.pressholding.db.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.myproject.albumlist.data.Records
+import com.santoshlokhande.pressholding.data.Records
 
 /**
  * Created by Santosh Lokhande on 07/9/2019.
