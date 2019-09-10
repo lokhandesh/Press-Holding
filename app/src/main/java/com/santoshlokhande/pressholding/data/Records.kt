@@ -20,6 +20,6 @@ data class Records(
         val quarter: String
 )
 
-data class RecordResponse(
-        val records: List<Records>
-)
+data class Results(val records: List<Records>)
+
+data class RecordResponse(val result:Results)

@@ -20,7 +20,7 @@ interface RecordsDao {
     fun insert(users: List<Records>)
 
     @Query("SELECT * FROM record_table ")
-    fun getAllAlbumList(): LiveData<List<Records>>
+    fun getAllRecordList(): LiveData<List<Records>>
 
     @Query("DELETE FROM record_table")
     fun deleteAll()
