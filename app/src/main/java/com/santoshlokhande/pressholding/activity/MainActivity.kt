@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         initUi()
 
+        //Added changes for testing
+
         recordViewModel.getAllRecords(initialLimit).observe(this,
                 Observer<List<Records>> {
                     adapter.setRecords(it)
