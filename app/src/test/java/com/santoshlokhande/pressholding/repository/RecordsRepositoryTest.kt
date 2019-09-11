@@ -9,11 +9,12 @@ import org.junit.Test
 
 import org.junit.Assert.*
 import org.junit.Rule
+import org.mockito.ArgumentMatchers
 import org.mockito.Mock
+import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
 
 class RecordsRepositoryTest {
-
 
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
@@ -46,6 +47,9 @@ class RecordsRepositoryTest {
     @Test
     fun insert() {
       //  assertNotNull(recordsRepository.insert())
+       // Mockito.`when`(this.recordsRepository.insert()).thenAnswer {
+           // return@thenAnswer Maybe.just(ArgumentMatchers.anyList<Repository>())
+       // }
 
     }
 

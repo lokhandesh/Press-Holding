@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         progressBar = findViewById(R.id.progressBar)
+        parentCoordinate = findViewById(R.id.parentLayout)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
@@ -77,7 +78,7 @@ class MainActivity : AppCompatActivity() {
              recordViewModel.retriveRecordList(initialLimit)
          }else{
              val snackbar = Snackbar
-                 .make(parentCoordinate, "Required internet to fetch updated album", Snackbar.LENGTH_LONG)
+                 .make(parentCoordinate, "Required internet to fetch updated records", Snackbar.LENGTH_LONG)
 
              // Changing message text color
              snackbar.setActionTextColor(Color.RED)
